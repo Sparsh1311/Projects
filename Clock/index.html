@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Professional Analog Clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="clock" id="clock">
+    <svg width="300" height="300">
+      <!-- Clock border -->
+      <circle cx="150" cy="150" r="145" stroke="white" stroke-width="8" fill="black"/>
+      
+      <!-- Minute ticks -->
+      <g id="ticks"></g>
+
+      <!-- Hour numbers -->
+      <g id="numbers"></g>
+
+      <!-- Hands -->
+      <line id="hour" x1="150" y1="150" x2="150" y2="90" stroke="red" stroke-width="6" stroke-linecap="round"/>
+      <line id="minute" x1="150" y1="150" x2="150" y2="60" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <line id="second" x1="150" y1="150" x2="150" y2="35" stroke="yellow" stroke-width="2" stroke-linecap="round"/>
+      
+      <!-- Center dot -->
+      <circle cx="150" cy="150" r="5" fill="white"/>
+    </svg>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
